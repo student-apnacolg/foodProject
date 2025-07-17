@@ -545,17 +545,21 @@ input[type=submit] {
 footer {
   color: white;
   font-size: 1.3rem;
-  padding: 50px 50px 25px !important;
+  padding: 50px 15px 25px 15px !important;
   background-color: #333;
 }
 
 .ftrRow {
-  gap: 75px;
-  display: flex;
+  gap: 50px;
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between !important;
 }
 
 .footerNav {
-  gap: 35px;
+  gap: 22px;
+  font-size: 1.1rem;
   display: flex;
   padding: 0 !important;
 }
@@ -612,6 +616,31 @@ footer {
   }
   .planBox {
     padding: 25px !important;
+  }
+  .row2 {
+    padding: 25px;
+    flex-direction: column;
+  }
+  .mealShowCase {
+    flex-direction: column;
+  }
+  .mealShowCase li {
+    width: 100%;
+  }
+  .mealPhoto img{
+    transform: scale(1);
+  }
+  .stepBox {
+    width: 90%;
+  }
+  .stepBox:last-child {
+    margin-top: 50px !important;
+  }
+  #mockupImg {
+    width: 75%;
+  }
+  .form {
+    width: 90%;
   }
 }
 
