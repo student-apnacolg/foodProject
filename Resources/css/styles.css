@@ -120,7 +120,7 @@ nav {
 .featureSec {
   width: 95%;
   margin: 25px auto !important;
-  padding-block: 100px;
+  padding-block: 100px !important;
   color: #555;
 }
 
@@ -224,7 +224,7 @@ h3 {
 
 .steps {
   color: #444;
-  padding-top: 100px;
+  padding-top: 100px !important;
 }
 
 .stepsHead::after {
@@ -368,9 +368,10 @@ h3 {
 
 .customer {
   color: #fff;
+  width: 100vw;
   background-size: cover;
-  padding: 100px 0 100px 0;
   background-attachment: fixed;
+  padding: 100px 0 100px 0 !important;
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../img/spinach2.jpg);
 }
 
@@ -383,25 +384,27 @@ h3 {
 }
 
 .customerBox {
-  width: 97%;
+  display: flex;
+  gap: 10%;
+  width: 90% !important;
   margin: 100px auto 0 !important;
   padding-block: 50px !important;
 }
 
 .customerReview{
-  font-size: 1.3rem;
+  width: 30% !important;
   word-spacing: 5px;
   font-style: italic;
   text-align: justify;
-  letter-spacing: 2px;
-  padding-inline: 35px;
+  padding: 10px !important;
 }
 
 .customerReview cite {
-  display: block;
-  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
   font-style: normal;
-  padding-inline: 10px;
+  justify-content: space-evenly;
+  padding-inline: 10px !important;
   margin-bottom: 40px !important;
 }
 
@@ -410,14 +413,13 @@ h3 {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 10px !important;
 }
 
 /* PLANS SECTION */
 
 
 .plans {
-  padding-block: 100px 80px;
+  padding-block: 100px 80px !important;
   background-color: #ddd;
 }
 
@@ -495,7 +497,7 @@ h3 {
 /* CONTACT SECTION */
 
 .contact {
-  padding-block: 80px;
+  padding-block: 80px !important;
 }
 
 .form {
@@ -540,7 +542,7 @@ input[type=submit] {
 footer {
   color: white;
   font-size: 1.3rem;
-  padding: 50px 50px 25px;
+  padding: 50px 50px 25px !important;
   background-color: #333;
 }
 
@@ -593,4 +595,17 @@ footer {
   .mealShowCase li {
     width: 49%; /* two columns */
   }
+}
+
+@media (max-width: 800px) {
+
+  .customerBox {
+    flex-direction: column;
+    gap: 50px !important;
+  }
+
+  .customerReview {
+    width: 100% !important;
+  }
+
 }
