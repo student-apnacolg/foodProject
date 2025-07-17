@@ -131,7 +131,7 @@ h2 {
   word-spacing: 1px;
   text-align: center;
   letter-spacing: 2px;
-  padding: 0 !important;
+  padding: 0 25px !important;
   text-transform: uppercase;
   margin:0 0 25px 0 !important;
 }
@@ -233,6 +233,7 @@ h3 {
 
 .stepsContainer {
   width: 95%;
+  display: flex;
 }
 
 .stepBox {
@@ -500,6 +501,8 @@ h3 {
   padding-block: 80px !important;
 }
 
+
+
 .form {
   gap: 30px;
   width: 55%;
@@ -583,7 +586,6 @@ footer {
   text-align: center;
   margin-top: 150px !important;
 }
-
 @media (max-width: 480px) {
   nav ul.navList {
     gap: 5px;
@@ -594,6 +596,22 @@ footer {
   }
   .mealShowCase li {
     width: 49%; /* two columns */
+  }
+  .stepsContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cityBoxContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .planContainer {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .planBox {
+    padding: 25px !important;
   }
 }
 
@@ -609,3 +627,5 @@ footer {
   }
 
 }
+
+@media (max-width: 800px) {
