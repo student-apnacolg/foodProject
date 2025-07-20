@@ -393,7 +393,6 @@ header {
   padding: .5rem;
   border-radius: .5rem;
   flex-direction: column;
-  border: .15rem solid #888;
 }
 
 .cityImgDiv {
