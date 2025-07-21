@@ -8,5 +8,4 @@ toogleBtn.onclick = () => {
 
   toogleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 }
-
-
+    AOS.init();
