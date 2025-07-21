@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .lgre {
   color: #73c6b6;
 }
@@ -77,7 +81,7 @@ a:hover {
 }  
 
 section {
-  padding: 5rem 2.5%;
+  padding: 4.75rem 2.5%;
 }
 
 .sectionHeading {
@@ -720,5 +724,11 @@ footer {
   }
   .socialHandles ul li {
     font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
